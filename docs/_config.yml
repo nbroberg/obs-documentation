@@ -1,0 +1,6 @@
+title: OBS Setup Guide for Church Streaming
+description: A guide for setting up OBS for live streaming services.
+theme: minima
+markdown: kramdown
+permalink: /:title/
+exclude: [README.md]
