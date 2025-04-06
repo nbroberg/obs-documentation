@@ -23,7 +23,7 @@
 
 1. Run Auto-Configuration Wizard:
    - Tools → Auto-Configuration Wizard
-   - Select "Optimize for streaming"
+   - Select `Optimize for streaming`
    - Follow the wizard's recommendations
 
 ## YouTube Channel Setup
@@ -42,8 +42,8 @@
 
    - Sign in to YouTube
    - Click profile icon
-   - Select "Create a channel"
-   - Choose "Create a custom name"
+   - Select `Create a channel`
+   - Choose `Create a custom name`
    - Enter unit name
 
 3. Verify your YouTube channel
@@ -54,7 +54,7 @@
 
 4. Enable live streaming
    - Access YouTube Studio
-   - Click "Create" → "Go Live"
+   - Click `Create` → `Go Live`
 
 ### Logging into YouTube
 
@@ -67,22 +67,22 @@
 
 1. Open OBS Settings → Stream:
 
-   - Select "YouTube - RTMP" as Service
-   - Click "Connect Account"
+   - Select `YouTube - RTMP` as Service
+   - Click `Connect Account`
    - Follow browser prompts to link YouTube
-   - Click "Apply" and "OK"
+   - Click `Apply` and `OK`
 
 2. Configure Stream Information:
 
-   - Click "Start Streaming"
+   - Click `Start Streaming`
    - In the browser window that opens:
-     - Set title (example: "Unit Sacrament Meeting - [Date]")
-     - Set visibility to "Unlisted"
+     - Set title (example: `Unit Sacrament Meeting - [Date]`)
+     - Set visibility to `Unlisted`
      - Upload thumbnail if desired
-     - Click "Go Live"
+     - Click `Go Live`
 
 3. Verify Stream:
-   - Check "Stream Status" in OBS shows "Good"
+   - Check `Stream Status` in OBS shows `Good`
    - Preview stream in YouTube Studio tab
    - Confirm audio levels are registering
 
@@ -122,7 +122,7 @@
    - Congregation (audience view)
 
 2. Example audio and video sources for each scene:
-   - Video Source: "Coax Chapel Cam"
+   - Video Source: `Coax Chapel Cam`
      ```
      Resolution: 1920x1080 (recommended)
      FPS: 30 (or 60 if higher upload speeds available)
@@ -149,9 +149,9 @@
 1. Add sources:
    - Background Image (sunrise-field.png)
    - Text overlay with message:
-     "Our broadcast will resume
-     after the administration of
-     the sacrament is complete."
+     `Our broadcast will resume
+after the administration of
+the sacrament is complete.`
 
 ## Going Live Process
 
@@ -180,7 +180,7 @@
 1. Start streaming in OBS
 1. Verify stream health in YouTube Studio
 1. Check preview feed
-1. Click "Go Live" in YouTube Studio
+1. Click `Go Live` in YouTube Studio
 
 ## During the Stream
 
@@ -203,19 +203,21 @@
 
 ### Common Stream Issues
 
-1. Dropped Frames
+1. [Dropped Frames](https://streamshark.io/obs-guide/stopping-dropped-frames)
 
    - Check internet connection
    - Lower bitrate
    - Switch to backup internet
 
-2. Audio Problems
+2. [Audio Problems](https://www.youtube.com/watch?v=4YOkWU9r5x4&ab_channel=MichaelFeyrerJr.)
 
    - Check audio sync offset
    - Verify filter settings
    - Monitor for feedback loops
+   - Check physical connections
 
 3. YouTube-Specific Issues
+
    - Stream key validation
    - Account status verification
    - Quality options processing

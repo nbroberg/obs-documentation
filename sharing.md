@@ -5,8 +5,8 @@
 1. After uploading your broadcast to YouTube:
    - Navigate to YouTube Studio
    - Find your uploaded video
-   - Click the "Share" button below the video
-   - Select "Email" or copy the video link
+   - Click the `Share` button below the video
+   - Select `Email` or copy the video link
 
 2. In your email client:
    - Paste the YouTube video link
@@ -23,18 +23,18 @@ To change YouTube video privacy settings:
 1. Access video settings:
    - Go to YouTube Studio
    - Select the video
-   - Click "Details" or "Edit"
+   - Click `Details` or `Edit`
 
 2. Modify visibility settings:
-   - Locate "Visibility" settings
-   - Change from "Unlisted" to "Private"
+   - Locate `Visibility` settings
+   - Change from `Unlisted` to `Private`
    - Save changes
 
 ### Best Practices
 
-- Upload videos as "Unlisted" initially
+- Upload videos as `Unlisted` initially
 - Share links only with authorized viewers
-- Change to "Private" after the approved viewing period
+- Change to `Private` after the approved viewing period
 - Consider downloading and removing videos after the retention period
 - Monitor video analytics for unauthorized sharing
 
