@@ -39,17 +39,16 @@
 5. Click "Create Stream"
 
 ### Get Stream URL
-1. After stream is created, locate:
-   - Stream URL (watch page URL)
-   - Stream Key (for OBS)
-2. Copy the Stream URL (looks like: `https://youtube.com/watch?v=XXXXXXXX`)
-3. Keep this page open for later use
+1. In OBS, click "Go Live"
+2. Under "Your Scheduled Streams", select the appropriate stream from the list
+3. The stream details will automatically populate
+4. Keep the OBS window open for the broadcast
 
 ## 3. Updating Google Sites
 
 ### Access Google Sites
 1. Go to sites.google.com
-2. Open your church's website in edit mode
+2. Open unit website in edit mode
 3. Navigate to the page containing the stream embed
 
 ### Update YouTube link

@@ -1,6 +1,7 @@
 # Complete Church Streaming Setup Guide
 
 ## Table of Contents
+
 1. Initial Setup and Installation
 2. YouTube Channel Setup
 3. OBS Configuration
@@ -12,12 +13,14 @@
 ## 1. Initial Setup and Installation
 
 ### Installing OBS
+
 1. Visit https://obsproject.com/
 2. Download and install for your operating system
 3. Run the installation wizard with default settings
 4. Launch OBS Studio
 
 ### Initial OBS Configuration
+
 1. Run Auto-Configuration Wizard:
    - Tools → Auto-Configuration Wizard
    - Select "Optimize for streaming"
@@ -26,38 +29,65 @@
 ## 2. YouTube Channel Setup
 
 ### One-time Channel Preparation
-1. Verify your YouTube channel
+
+1. Create a unit-specific [Google account](https://support.google.com/youtube/answer/161805) (if not already created):
+
+   - Use format: unitname@gmail.com
+   - Store credentials securely
+   - Share with leadership team
+
+2. [Create YouTube channel](https://support.google.com/youtube/answer/1646861):
+
+   > See [Asheville Ward YouTube channel](https://studio.youtube.com/channel/UC8GiMLF9tS1041MliykYozA) for reference
+
+   - Sign in to YouTube
+   - Click profile icon
+   - Select "Create a channel"
+   - Choose "Create a custom name"
+   - Enter unit name
+
+3. Verify your YouTube channel
+
    - Go to youtube.com/verify
    - Complete phone verification
    - Wait 24 hours for streaming activation
 
-2. Enable live streaming
+4. Enable live streaming
    - Access YouTube Studio
    - Click "Create" → "Go Live"
 
-### Creating a Stream
-1. In YouTube Studio:
-   - Click "Create" → "Go Live"
-   - Choose "Stream now" or "Schedule stream"
+### Logging into YouTube
 
-2. Configure Stream Settings:
-   - Set title, description, and category
-   - Upload thumbnail (1280x720)
-   - Choose visibility (Public/Unlisted/Private)
-   - Configure advanced settings (chat, DVR, latency)
+1. Go to YouTube Studio:
+   - Open your web browser
+   - Navigate to studio.youtube.com
+   - Sign in with your Google account
 
-## 3. OBS Configuration
+### Creating and Selecting Stream
 
-### Stream Settings
-1. Open OBS Settings → Stream
-2. Configure:
-   ```
-   Service: YouTube - RTMP
-   Server: Primary YouTube ingest server (auto)
-   Stream Key: Copy from YouTube Studio
-   ```
+1. Open OBS Settings → Stream:
+
+   - Select "YouTube - RTMP" as Service
+   - Click "Connect Account"
+   - Follow browser prompts to link YouTube
+   - Click "Apply" and "OK"
+
+2. Configure Stream Information:
+
+   - Click "Start Streaming"
+   - In the browser window that opens:
+     - Set title (example: "Unit Sacrament Meeting - [Date]")
+     - Set visibility to "Unlisted"
+     - Upload thumbnail if desired
+     - Click "Go Live"
+
+3. Verify Stream:
+   - Check "Stream Status" in OBS shows "Good"
+   - Preview stream in YouTube Studio tab
+   - Confirm audio levels are registering
 
 ### Video Settings
+
 1. Settings → Video:
    ```
    Base Resolution: 1920x1080
@@ -67,68 +97,72 @@
    ```
 
 ### Output Settings
+
 1. Settings → Output:
    ```
    Encoder: x264 (or NVENC if available)
    Rate Control: CBR
    Bitrate: 4000-6000 Kbps
    Keyframe Interval: 2
-   CPU Usage Preset: Very Fast
+   CPU Usage Preset: Very Fast (depending on processor)
    Profile: High
    ```
 
 ## 4. Scene Creation and Audio Setup
 
-### Main Service Scene Setup
-1. Create scenes:
-   - Pulpit Scene
-   - Congregation Scene
-   - Pre-Service Scene
-   - Lower Thirds
+### Main Scene Setup
 
-2. Add standard sources:
-   - Video Capture Device (cameras)
-   - Audio Input Capture (microphones)
-   - Image (church logo)
-   - Text (service information)
+1. Create the following scenes:
+
+   - Pulpit (main speaking scene)
+   - Sacrament (wait scene for sacrament administration)
+   - Stage (wide view)
+   - Congregation (audience view)
+
+2. Example audio and video sources for each scene:
+   - Video Source: "Coax Chapel Cam"
+     ```
+     Resolution: 1920x1080 (recommended)
+     FPS: 30 (or 60 if higher upload speeds available)
+     ```
+   - Audio Sources:
+     - Filtered Audio (for pulpit)
+     - Unfiltered Audio (for congregation)
 
 ### Audio Configuration
-1. Pulpit Audio Setup:
+
+1. Basic Audio Setup:
+
    ```
-   Filters (in order):
-   1. Noise Suppression
-      - Method: RNNoise
-      - Intensity: Medium
-   2. Compressor
-      - Ratio: 4:1
-      - Threshold: -18dB
-      - Attack: 6ms
-      - Release: 60ms
+   Filtered Audio (Pulpit):
+   - Volume: ~49% (-6dB)
+   - Noise Suppression Filter enabled
+
+   Unfiltered Audio (Congregation):
+   - Volume: 100% (0dB)
    ```
 
-2. Congregation Audio Setup:
-   ```
-   Filters (in order):
-   1. Noise Suppression
-      - Method: RNNoise
-      - Intensity: Light
-   2. Compressor
-      - Ratio: 2:1
-      - Threshold: -24dB
-      - Attack: 10ms
-      - Release: 100ms
-   ```
+### Sacrament Scene Setup
+
+1. Add sources:
+   - Background Image (sunrise-field.png)
+   - Text overlay with message:
+     "Our broadcast will resume
+     after the administration of
+     the sacrament is complete."
 
 ## 5. Going Live Process
 
 ### Pre-Stream Checklist
+
 1. Technical Check (30 min before):
+
    ```
    □ Internet connection speed test
    □ Camera connections
    □ Audio levels
    □ Scene transitions
-   □ Microphone tests
+   □ Microphone tests (for each scene)
    ```
 
 2. Content Check:
@@ -141,6 +175,7 @@
    ```
 
 ### Launch Sequence
+
 1. Start streaming in OBS
 1. Verify stream health in YouTube Studio
 1. Check preview feed
@@ -149,6 +184,7 @@
 ## 6. During the Stream
 
 ### Active Monitoring
+
 1. Stream health indicators
 1. Audio levels
 1. Chat engagement
@@ -156,6 +192,7 @@
 1. Network stability
 
 ### Best Practices
+
 1. Use dedicated streaming computer
 1. Monitor stream on separate device
 1. Keep support contact information handy
@@ -164,12 +201,15 @@
 ## 7. Troubleshooting
 
 ### Common Stream Issues
+
 1. Dropped Frames
+
    - Check internet connection
    - Lower bitrate
    - Switch to backup internet
 
 2. Audio Problems
+
    - Check audio sync offset
    - Verify filter settings
    - Monitor for feedback loops
