@@ -1,33 +1,19 @@
-# My GitHub Pages Project
+# OBS Setup Guide for Church Streaming
 
-This project is designed to host documentation using GitHub Pages. It utilizes Markdown files for content creation, allowing for easy formatting and styling.
-
-## Project Structure
-
-- **docs/**: Contains all documentation files.
-  - **_layouts/**: Layout templates for the Markdown files.
-  - **_config.yml**: Configuration settings for the GitHub Pages site.
-  - **assets/**: Contains stylesheets and other assets.
-- **.gitignore**: Specifies files to be ignored by Git.
-- **README.md**: Documentation for the project.
+Welcome to the OBS Setup Guide for Church Streaming. This documentation provides detailed instructions on how to set up OBS (Open Broadcaster Software) for live streaming services.
 
 ## Getting Started
 
-To get started with this project, clone the repository and navigate to the project directory:
+To get started, please refer to the following sections:
 
-```bash
-git clone https://github.com/yourusername/my-github-pages.git
-cd my-github-pages
-```
+- [Installation Instructions](installation.md)
+- [Operational Guide](operations.md)
 
-## Usage
+## Additional Resources
 
-You can view the documentation by navigating to the `docs/index.md` file or by deploying the project to GitHub Pages.
+For more information, you can check out the following resources:
 
-## Contributing
+- [OBS Official Documentation](https://obsproject.com/wiki)
+- [YouTube Tutorials](https://www.youtube.com/results?search_query=obs+youtube)
 
-Contributions are welcome! Please submit a pull request or open an issue for any suggestions or improvements.
-
-## License
-
-This project is licensed under the MIT License. See the LICENSE file for more details.
+Feel free to contribute to this guide by submitting a pull request or opening an issue if you have suggestions for improvements.
