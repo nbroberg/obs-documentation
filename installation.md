@@ -2,15 +2,15 @@
 
 ## Table of Contents
 
-1. Initial Setup and Installation
-2. YouTube Channel Setup
-3. OBS Configuration
-4. Scene Creation and Audio Setup
-5. Going Live Process
-6. During the Stream
-7. Troubleshooting
+1. [Initial Setup and Installation](#initial-setup-and-installation)
+2. [YouTube Channel Setup](#youtube-channel-setup)
+3. [OBS Configuration](#obs-configuration)
+4. [Scene Creation and Audio Setup](#scene-creation-and-audio-setup)
+5. [Going Live Process](#going-live-process)
+6. [During the Stream](#during-the-stream)
+7. [Troubleshooting](#troubleshooting)
 
-## 1. Initial Setup and Installation
+## Initial Setup and Installation
 
 ### Installing OBS
 
@@ -26,7 +26,7 @@
    - Select "Optimize for streaming"
    - Follow the wizard's recommendations
 
-## 2. YouTube Channel Setup
+## YouTube Channel Setup
 
 ### One-time Channel Preparation
 
@@ -86,6 +86,8 @@
    - Preview stream in YouTube Studio tab
    - Confirm audio levels are registering
 
+## OBS Configuration
+
 ### Video Settings
 
 1. Settings → Video:
@@ -108,7 +110,7 @@
    Profile: High
    ```
 
-## 4. Scene Creation and Audio Setup
+## Scene Creation and Audio Setup
 
 ### Main Scene Setup
 
@@ -151,7 +153,7 @@
      after the administration of
      the sacrament is complete."
 
-## 5. Going Live Process
+## Going Live Process
 
 ### Pre-Stream Checklist
 
@@ -169,7 +171,6 @@
    ```
    □ Stream title/description
    □ Thumbnail uploaded
-   □ Chat moderation setup
    □ Graphics prepared
    □ Schedule confirmed
    ```
@@ -181,7 +182,7 @@
 1. Check preview feed
 1. Click "Go Live" in YouTube Studio
 
-## 6. During the Stream
+## During the Stream
 
 ### Active Monitoring
 
@@ -198,7 +199,7 @@
 1. Keep support contact information handy
 1. Prepare backup scenes
 
-## 7. Troubleshooting
+## Troubleshooting
 
 ### Common Stream Issues
 
@@ -217,7 +218,6 @@
 3. YouTube-Specific Issues
    - Stream key validation
    - Account status verification
-   - Chat functionality
    - Quality options processing
 
 Remember to always perform a test stream before important events and maintain backup plans for technical difficulties.
